@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-mono-num: "Martian Mono", ui-monospace, monospace;
+  --font-hero: "Oxanium", "Sora", ui-sans-serif, sans-serif;
+
+  --color-ink: #0b0c16;
+  --color-panel: #141626;
+  --color-panel-2: #1c1e32;
+  --color-line: #2a2d48;
+  --color-pink: #ff2e63;
+  --color-violet: #a855f7;
+  --color-cyan: #22d3ee;
+  --color-mist: #a4a9c8;
+  --color-fog: #676c8e;
+}
+
+html,
+body {
+  background: var(--color-ink);
+  color: #f2f3fa;
+  font-family: var(--font-heading);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+input,
+select {
+  font: inherit;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
